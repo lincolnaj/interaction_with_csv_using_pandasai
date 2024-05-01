@@ -1,0 +1,38 @@
+Question,Response
+tactic,": TA0042
+Threat: Defense Evasion
+Actor: APT32
+Procedure: File Deletion
+Technique ID: T1083
+Sub-technique ID: T1083.003
+Target/Industry: Government, Military
+Sub-Procedure: Delete system files and logs"
+"what are the sources in the csv
+",The sources in the CSV (Comma Separated Values) document include the Australian Cyber Security Centre (ACSC) and the Cybersecurity and Infrastructure Security Agency (CISA).
+"what are the most common tactics
+","The most common tactics in these cyber incidents are:
+
+1. Initial Access (TA00001) - A technique used to gain an initial foothold into a target network or system.
+
+2. Command and Control (TA0002) - A tactic used to establish and maintain communication with compromised systems or assets.
+
+3. Credential Access (TA0006) - A tactic used to obtain and exploit credentials or authentication methods to gain access to target systems or networks.
+
+4. Persistence (TA0003) - A tactic used to maintain access to a compromised system or network through the use of backdoors, stolen credentials, or other methods.
+
+5. Lateral Movement (TA0008) - A tactic that involves moving from one compromised system to another within"
+"what is the highest tactics in the csv
+","The highest tactic in the CSV is Credential Access, with 13 occurrences."
+what is the best common timeline in the ransomware from csv,"to generate
+
+Based on the given data, the best common timeline for the ransomware attacks would be 8-Dec-23, 17-May-23, 27-Sep-23, 28-Feb-24, 29-Feb-24."
+what is the best common timeline in the ransomware attack from csv,"Date: 13-Dec-23, 1-Dec-23, 8-Dec-23
+Source: ACSC
+Link: https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/stopransomware-play-ransomware
+Actor: Playcrypt
+Tactic ID: TA0011, TA0005, TA0042
+Tactic Name: Command and Control, Execution, Resource Development
+Technique ID: T1098, T1078, T1570
+Technique: Account Manipulation, Valid Accounts, Lateral Tool Transfer
+Sub-technique ID: T1098.005, T1078.002, T1114.003
+Sub-Technique Name"

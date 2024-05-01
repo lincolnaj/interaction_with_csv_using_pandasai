@@ -1,0 +1,6 @@
+Query,Answer
+csv,"line to paste into the matrix:
+
+Actor,Tactic,Technique,Sub-technique,Procedure
+APT29,TA0043,T1595,T1595.001,Active Scanning,scanning ip block
+APT29,TA0043,T1595,T1595.002,Active Scanning,Vulnerability Scanning"
