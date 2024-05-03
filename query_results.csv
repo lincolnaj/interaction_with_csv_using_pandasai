@@ -36,3 +36,179 @@ Technique ID: T1098, T1078, T1570
 Technique: Account Manipulation, Valid Accounts, Lateral Tool Transfer
 Sub-technique ID: T1098.005, T1078.002, T1114.003
 Sub-Technique Name"
+"what are the most common tactics
+
+",Error in processing your query.
+"what are the most common tactics
+
+",Error in processing your query.
+"what are the most common tactics?
+
+",Error in processing your query.
+"what are the sources 
+",Error in processing your query.
+what are the sources,"and tactics of nation state attacks
+
+Sources of Nation State Attacks:
+
+1. Advanced Persistent Threat (APT) groups: These are sophisticated and well-resourced cybercriminal organizations that are sponsored by nation states. They operate in a highly targeted and persistent manner, often using advanced techniques to breach their targets.
+
+2. State-sponsored hacking groups: These are teams of hackers and cyber operatives that are directly sponsored and funded by nation states, and tasked with carrying out cyber espionage and sabotage against other nations.
+
+3. Military and intelligence agencies: Several nations have specialized military and intelligence units that are dedicated solely to carrying out cyber attacks against other nations. These units often have advanced cyber capabilities and conduct both offensive and defensive operations.
+
+4. Private contractors: Some nation states outsource"
+most common technique,"targets : T1110, T1078, T1036, T1567, T1589"
+most common technique and their names,"TechniqueID: T1110
+Name: Brute Force"
+"i need the most common tactics
+",Error in processing your query.
+most common tactics,Error in processing your query.
+"most common target
+","The most common target in these reports appears to be government and military organizations, with multiple reports mentioning attacks on these entities. Other common targets include companies in the technology, industrial, and financial sectors. The reports also mention attacks on educational institutions, law enforcement, and think-tanks. There is also a specific mention of a target being Israeli-made programmable logic controllers (PLCs)."
+"most common target
+","The most common target is likely government entities, particularly those in the aviation, education, law enforcement, defense, and financial sectors. These sectors are often targeted by state-sponsored actors for their valuable information and potential for disruption. Additionally, large companies and their contracted IT departments may also be a common target for cyber attacks, as they often have access to sensitive data and valuable technology."
+most common source in csv,":
+https://www.cisa.gov/news-events/all-updates/aa21-131a, https://www.cyber.gov.au/threats, https://media.defense.gov/2020/Dec/17/2002542074/-1/-1/0/CSA_CHINESE_EXPLOITATION_OF_NETWORK_DEVICES_UOO179811.PDF"
+"least common tactic
+","Tactic Name: Resource Development
+
+least common technique
+
+Technique Name: Exploitation for Client Execution"
+"least common tactic in csv
+","Tactic: Resource Development
+
+ This tactic was only mentioned in one of the CSV entries for the date April 18, 2023. It is used by the ATP29 actor to acquire infrastructure as part of their cyber campaign. Resource development involves the development, acquisition, and management of resources that can be used for future operations, such as infrastructure, tools, and personnel."
+what are the most common actors in the csv,"1. APT29
+2. G1015
+3. APT28
+4. G1027
+5. G0098
+6. Star Blizzard
+7. Playcrypt
+8. G1017
+9. ATP29
+10. Karakurt
+11. BianLian"
+what is the most common actors in the csv,"Based on the data provided, it is not possible to determine the most common actors in the csv. The list of actors includes a mix of state-sponsored and criminal groups, with no clear pattern or trend. A more comprehensive analysis of data on cyber incidents and threat actors would be needed to identify the most common actors."
+what is the most common tactic in the csv,"The most common tactic in the CSV is Tactical Technique T1036 - Lateral Tool Transfer, with a total of 7 occurrences."
+what is the most common tactic in the csv,"file?
+
+The most common tactic in the CSV file is Lateral movement, with a total of 16 mentions."
+what is the most common tactic id in the csv,"document
+
+TA0001 (Initial Access) is the most common tactic ID in the CSV document, occurring five times."
+what is the most Tactics and technique for aviation or ransomware in 2023,"The most tactics and techniques for aviation or ransomware in 2023 are likely to be Credential Access, Persistence, Privilege Escalation, Command and Control, Initial Access, Reconnaissance, Initial access, Discovery, Lateral movement, Exfiltration, Execution, Defense Evasion, and Resource Development. Specific techniques that may be used include Brute Force, Multi-Factor Authentication Request Generation, Masquerading, Phishing, and Remote Access Software. Additionally, the use of cloud infrastructure and social engineering tactics may also increase in these industries."
+what is the most Tactics and technique for aviation or ransomware in 2023 in the csv,"file
+
+For aviation in 2023, the most utilized tactics and techniques are Initial Access (TA0001), Execution (TA0002), and Defense Evasion (TA0009), with associated techniques including Brute Force (T1110.003), Application Layer Protocol (T1071.002), and Remote Access Software (T1105).
+
+For ransomware in 2023, the most utilized tactics and techniques are Initial Access (TA0001), Command and Control (TA0011), and Execution (TA0002), with associated techniques including Phishing (T1566), Lateral Tool Transfer (T1219), and Exfiltration Over Alternative Protocol (T1048.001)."
+what is the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table,":
+
+| Tactics                       | Techniques     |
+|-------------------------------|----------------|
+| Initial Access                | T1098.005      |
+| Execution                     | T1548.002      |
+| Persistence                   | T1505.001      |
+| Privilege Escalation          | T1059.001      |
+| Defense Evasion               | T1027.003, T1566.002 |
+| Credential Access             | T1110.003      |
+| Discovery                     | T1589.001      |
+| Lateral Movement              | T1048.001      |
+| Collection                    | T1005.002      |
+| Command and Control           | T1071.001      |
+| Exfiltration                  | T1568"
+what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table,"Tactic Name | Number of Occurrences | Percentage of Total
+--- | --- | ---
+Credential Access | 2 | 14.3%
+Persistence | 2 | 14.3%
+Initial Access | 1 | 7.1%
+Command and Control | 2 | 14.3%
+Reconnaissance | 1 | 7.1%
+Discovery | 1 | 7.1%
+Lateral movement | 2 | 14.3%
+Exfiltration | 2 | 14.3%
+Execution | 1 | 7.1%
+Defense Evasion | 1 | 7.1%
+
+Technique | Number of Occurrences | Percentage of Total
+--- | --- | ---
+Multi-F"
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, include a confidence ratio","| Tactic                      | # of occurrences / total reports | Confidence Ratio |
+|-----------------------------|----------------------------------|-------------------|
+| Credential Access           | 5/15                             | 33.3%             |
+| Persistence                 | 4/15                             | 26.7%             |
+| Privilege Escalation        | 2/15                             | 13.3%             |
+| Command and Control         | 3/15                             | 20.0%             |
+| Initial Access              | 3/15                             | 20.0%             |
+| Reconnaissance              | 5/15                             | 33.3%             |
+| Discovery                   | 5/15                             | 33."
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, including a confidence ratio","| Tactic             | Technique ID                                                                                    | Technique Name                                                                         | Sub-technique ID                                                  | Sub-technique Name                                                                          | Confidence Ratio |
+|----------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-----|
+| Initial Access | T1110 | Brute Force | T1110.003 | Password Spraying | High |
+| Credential Access | T1528 | Steal Application Access Token | nan | nan | Medium |
+| Persistence | T1621 | Multi-Factor Authentication Request Generation | T1098.005 | Device Registration | Medium |
+| Command and Control | T1098 | Account Manipulation | T1090.002 | External Proxy | High |
+| Persistence | T1090 |"
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, including a confidence ratio","| Category | Technique Name | Confidence Ratio |
+|----------|----------------|------------------|
+| Aviation | Lateral Tool Transfer - Lateral Tool Transfer - T1566.002 | High |
+| Aviation | Gather Victim Org Information - Gather Victim Org Information - T1591.001 | High |
+| Aviation | Lateral movement - Exploitation for Client Execution - T1589.001 | Medium |
+| Aviation | Account Manipulation - Cloud Accounts - T1078.001 | High |
+| Aviation | Command and Control - Exfiltration Over Web Service - T1071.002 | High |
+| Ransomware | Brute Force - Password Spraying - T1110.003 | High |
+| Ransomware | Command and"
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, including a confidence ratio","| Tactic | Technique | Confidence Ratio |
+| ------ | ----------| ------------------|
+| Initial Access | Nan | High |
+| Persistnce | Nan | High |
+| Command and Control | Nan | High |
+| Initial Access | Nan | High |
+| Reconnaissance | Nan | Low |
+| Initial Access | Nan | High |
+| Discovery | Nan | High |
+| Lateral Movement | Nan | High |
+| Exfiltration | Nan | High |
+| Execution | Nan | High |
+| Defense Evasion | Nan | High |
+| Resource Development | Nan | Low |
+| Collection | Nan | High |
+| Execution| Nan | High |
+| Lateral Movement | Nan | High |
+| Brute Force | T1110.003 |"
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, including a confidence ratio","| Date       | Tactic | Tactic Name          | Technique | Confidence Ratio |
+|------------|--------|----------------------|-----------|------------------|
+| 27-Feb-24  | TA0006 | Credential Access    | T1110     | 80%              |
+| 28-Feb-24  | TA0003 | Persistence          | T1528     | 75%              |
+| 29-Feb-24  | TA0004 | Privilege Escalation | T1621     | 70%              |
+| 18-Apr-23  | TA0011 | Command and Control  | T1098     | 85%              |
+| 8-Feb-24   | TA0001 | Initial"
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, including a confidence ratio","Tactic ID | Tactic Name | Technique ID | Technique Name | Confidence Ratio
+--- | --- | --- | --- | ---
+TA0002 | Initial Access | T1098 | Account Manipulation | High (75%)
+TA0003 | Persistence | T1528 | Steal Application Access Token | High (70%)
+TA0004 | Privilege Escalation | T1621 | Multi-Factor Authentication Request Generation | High (80%)
+TA0005 | Defense Evasion | T1078 | Valid Accounts | High (85%)
+TA0006 | Credential Access | T1078 | Valid Accounts | High (90%)
+TA0007 | Discovery | T1590 | Gather Victim Network Information | High"
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, including a confidence ratio","| Date      | Tactic       | Tactic Name     | Technique | Sub-technique | Target      | Confidence |
+|-----------|--------------|-----------------|-----------|--------------|-------------|------------|
+| 27-Feb-24 | TA0006, TA0001, TA0002   | Credential Access, Initial Access, Execution | T1098, T1090, T1078, T1016, T1048, T1059, T1567, T1593, T1585, T1110.003, T1078.004 | Social Media, Spearphishing Link, Password Guessing, Email Addresses, Domains | Aviation  | High       |
+| 28-Feb-24 | TA"
+"what are the most common Tactics and techniques for aviation or ransomware in 2023 in the CSV in a table, including a confidence ratio","| Tactic Name | Technique Name | Confidence Ratio |
+|--------------|----------------|------------------|
+| Credential Access | Brute Force | High |
+| Credential Access | Steal Application Access Token | High |
+| Persistence | Multi-Factor Authentication Request Generation | High |
+| Privilege Escalation | Account Manipulation | High |
+| Command and Control | Proxy | High |
+| Initial Access | Valid Accounts | High |
+| Reconnaissance | Exploit Public-facing Application | High |
+| Initial Access | Gather Victim Network Information | High |
+| Discovery | Gather Victim Org Information | High |
+| Lateral movement | Gather Victim Identity Information | High |
+| Initial Access | System Network Configuration Discovery | High |
+| Lateral movement | Lateral Tool Transfer"
