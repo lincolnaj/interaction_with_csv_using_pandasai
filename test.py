@@ -51,7 +51,7 @@ if uploaded_csv:
 
     with column1:
         st.info("File uploaded successfully.")
-        data = pd.read_csv(uploaded_csv)
+        data = pd.read_csv(uploaded_csv, encoding='latin1')
         st.dataframe(data, height=300)
 
     with column2:
