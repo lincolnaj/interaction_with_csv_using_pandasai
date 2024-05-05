@@ -6,7 +6,7 @@ import csv
 import keyword
 
 # Set the API key for OpenAI (securely)
-os.environ['OPENAI_API_KEY'] = 
+os.environ['OPENAI_API_KEY'] = ''
 
 def query_openai_with_csv_data(dataframe, user_query):
     # Initialize OpenAI client
@@ -33,24 +33,19 @@ def query_openai_with_csv_data(dataframe, user_query):
     3. Ensure the response is relevant to the provided query.
     4. The result of the query must not go outside of the data provided in the Dataset.csv. Avoid model hallucination.
     5. The result of the query must not change for the same question.
-    6. Use examples to illustrate the query result.
-
-    Examples:
-    - Query: What is the most common Tactic?
-    Response: The most common tactic is Initial Access, which appeared 17 times. Show in table format.
-    
-    - Query: What is the most common Technique?
-    Response: The most common technique is Valid Accounts, which appeared 15 times.Show in table format.
-    
-    - Query: What is the rarest Tactic?
-    Response: The rarest tactic is Collection and Lateral Movement, which appeared 3 times. Show in table format.
     """
+    
+    # Assemble the data context by summarizing the DataFrame columns
+    data_context = ""
+    for col in dataframe.columns:
+        col_values = map(str, dataframe[col].unique())
+        data_context += f"{col}: {', '.join(col_values)}\n"
 
     # Query OpenAI with the constructed prompt
     try:
         completion = openai.Completion.create(
             engine="gpt-3.5-turbo-instruct",
-            prompt=prompt + f"\n\n{user_query}",
+            prompt=prompt + f"\n\n{data_context}\n\n{user_query}",
             max_tokens=150
         )
         response_text = completion.choices[0].text.strip()
