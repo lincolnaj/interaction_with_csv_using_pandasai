@@ -10,6 +10,12 @@ def count_non_empty(series):
         del counts['']
     return counts
 
+# Count the number of unique values in the 'Link' column
+num_unique_links = df['Link'].nunique()
+
+# Print the result
+print("Number of different advisories:", num_unique_links)
+
 # Calculate frequency of each field
 frequency_source = count_non_empty(df['Source'])
 frequency_link = count_non_empty(df['Link'])
@@ -22,7 +28,7 @@ frequency_subtechnique_id = count_non_empty(df['Sub-technique ID'])
 frequency_subtechnique_name = count_non_empty(df['Sub-Technique Name'])
 
 # Print the frequencies
-print("Frequency of Source:")
+print("\nFrequency of Source:")
 print(frequency_source)
 print("\nFrequency of Link:")
 print(frequency_link)
@@ -40,10 +46,3 @@ print("\nFrequency of Sub-technique ID:")
 print(frequency_subtechnique_id)
 print("\nFrequency of Sub-Technique Name:")
 print(frequency_subtechnique_name)
-
-
-# Count the number of unique values in the 'Link' column
-num_unique_links = df['Link'].nunique()
-
-# Print the result
-print("Number of different advisories:", num_unique_links)
