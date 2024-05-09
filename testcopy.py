@@ -16,15 +16,17 @@ def query_openai_with_csv_data(dataframe, user_query):
     summary = dataframe.describe().to_markdown()  # Statistical summary
 
     # Construct prompt with reduced data and concise description
-    # prompt = f"### Data Summary:\n{summary}\n### User Query:\n{user_query}\n### Provide the answer with a confidence ratio in a table format."
     prompt_suffix = "\nProvide the answer with a confidence ratio in a table format."
-
     # Construct prompt using a series of messages
     messages = [
-        {"role": "system", "content": "You are an AI trained to answer queries only from the uploaded csv, nothing else"},
-        {"role": "user", "content": f"Data Summary:\n{summary}"},
-        {"role": "user", "content": f"User Query:\n{user_query}{prompt_suffix}"}
+        "### System Instructions\n"
+        "You are an AI trained to analyze data and respond to user queries based strictly on the provided data. You should not use any external knowledge.\n\n"
+        "### Response Guidelines\n"
+        "Provide the answer with a confidence ratio in a table format. Interpret the data accurately and consider all relevant factors and avoid displaying duplicate reults.\n"
+        f"Data Summary:\n{summary}",
+        f"User Query:\n{user_query}{prompt_suffix}"
     ]
+    prompt = "\n\n".join(messages)  # Combine messages into a single string with new lines
 
     try:
         completion = openai.Completion.create(
@@ -40,6 +42,7 @@ def query_openai_with_csv_data(dataframe, user_query):
     except Exception as error:
         print("Error querying OpenAI:", error)
         return user_query, "Error in processing your query."
+
 
 
 def append_query_result_to_csv(question, response):
