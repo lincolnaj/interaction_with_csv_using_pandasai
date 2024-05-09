@@ -14,19 +14,10 @@ def query_openai_with_csv_data(dataframe, user_query):
 
     # Define the provided prompt
     prompt = """
-    Read the dataset containing TTP (Tactics, Techniques, and Procedures) information from dataset.csv. Each row should contain the following fields: 
-    - Date
-    - Source
-    - Link
-    - Actor
-    - Tactic ID
-    - Tactic Name
-    - Technique ID
-    - Technique
-    - Sub-technique ID
-    - Sub-Technique Name
-    - Target
+    Use the following step-by-step instructions to respond to user inputs.
 
+    Read the dataset containing TTP (Tactics, Techniques, and Procedures) information from dataset uploaded
+    
     Your tasks:
     1. Answer the query in a clear and concise manner. Avoid big block of text.
     2. Limit the response to 200 words or 4 sentences or present the result in tabular format if possible.

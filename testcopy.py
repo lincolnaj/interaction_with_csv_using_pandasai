@@ -5,7 +5,7 @@ import openai
 import os
 import csv
 # Set the API key for OpenAI (securely)
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 
 
 def query_openai_with_csv_data(dataframe, user_query):
@@ -17,15 +17,31 @@ def query_openai_with_csv_data(dataframe, user_query):
 
     # Construct prompt with reduced data and concise description
     prompt_suffix = "\nProvide the answer with a confidence ratio in a table format."
+
     # Construct prompt using a series of messages
     messages = [
         "### System Instructions\n"
-        "You are an AI trained to analyze data and respond to user queries based strictly on the provided data. You should not use any external knowledge.\n\n"
+        "You are a csv analyzing expert, an AI trained to analyze data and respond to user queries based strictly on the provided data as csv. You should not use any external knowledge.\n\n"
         "### Response Guidelines\n"
-        "Provide the answer with a confidence ratio in a table format. Interpret the data accurately and consider all relevant factors and avoid displaying duplicate reults.\n"
+        "Look for keywords in the query and then search in the csv.\n"
+        "Find column which will match a keyword in the query\n"
+        "in the query if common between two columns are mentioned, inner join the 2 columns and then find the output.\n"
+        "Answer row by row\n"
+        "DO not display duplicate outputs\n"
+        "Do not modify anything in the CSV"
+        # "when there are multiple columns in the query, provide multiple column output.\n"
+        # "in the query if common between two columns are mentioned, inner join the 2 columns and then find the output.\n"
         f"Data Summary:\n{summary}",
         f"User Query:\n{user_query}{prompt_suffix}"
     ]
+    # messages = [
+    #     "### System Instructions\n"
+    #     "You are an AI trained to analyze data and respond to user queries based strictly on the provided data. You should not use any external knowledge.\n\n"
+    #     "### Response Guidelines\n"
+    #     "Provide the answer with a confidence ratio in a table format. Interpret the data accurately and consider all relevant factors and avoid displaying duplicate reults.\n"
+    #     f"Data Summary:\n{summary}",
+    #     f"User Query:\n{user_query}{prompt_suffix}"
+    # ]
     prompt = "\n\n".join(messages)  # Combine messages into a single string with new lines
 
     try:
@@ -36,14 +52,12 @@ def query_openai_with_csv_data(dataframe, user_query):
             temperature=0.5
         )
         response_text = completion.choices[0].text.strip()
-        simulated_confidence = "95%"  # Placeholder for demonstration
+        # simulated_confidence = "95%"  # Placeholder for demonstration
         full_response = f"{response_text}"
         return user_query, full_response
     except Exception as error:
         print("Error querying OpenAI:", error)
         return user_query, "Error in processing your query."
-
-
 
 def append_query_result_to_csv(question, response):
     # CSV file to store query results

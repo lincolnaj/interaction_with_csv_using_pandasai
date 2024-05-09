@@ -5,7 +5,7 @@ import openai
 import os
 import csv
 # Set the API key for OpenAI (securely)
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ''
 
 
 def query_openai_with_csv_data(dataframe, user_query):

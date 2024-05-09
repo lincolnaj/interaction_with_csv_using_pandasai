@@ -35,6 +35,8 @@ An LLM powered ChatCSV Streamlit app so you can chat with your CSV files.
   cd ChatCSV-Streamlit-App
   pip install -r requirements.txt
   streamlit run test.py
+    streamlit run test_with_prompt.py
+
   
   ```
  <h2> Run on Cloud </h2>
