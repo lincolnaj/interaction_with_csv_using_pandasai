@@ -21,7 +21,8 @@ def query_openai_with_csv_data(dataframe, user_query):
     # Construct prompt using a series of messages
     messages = [
         "### System Instructions\n"
-        "You are a csv analyzing expert, an AI trained to analyze data and respond to user queries based strictly on the provided data as csv. You should not use any external knowledge.\n\n"
+        "You are a csv analyzing expert, an AI trained to analyze data and respond to user queries based strictly on "
+        "the provided data as csv. You should not use any external knowledge.\n\n"
         "### Response Guidelines\n"
         "Look for keywords in the query and then search in the csv.\n"
         "Find column which will match a keyword in the query\n"
@@ -29,11 +30,13 @@ def query_openai_with_csv_data(dataframe, user_query):
         "Answer row by row\n"
         "DO not display duplicate outputs\n"
         "Do not modify anything in the CSV"
-        # "when there are multiple columns in the query, provide multiple column output.\n"
-        # "in the query if common between two columns are mentioned, inner join the 2 columns and then find the output.\n"
         f"Data Summary:\n{summary}",
         f"User Query:\n{user_query}{prompt_suffix}"
     ]
+
+    # "when there are multiple columns in the query, provide multiple column output.\n"
+    # "in the query if common between two columns are mentioned, inner join the 2 columns and then find the output.\n"
+
     # messages = [
     #     "### System Instructions\n"
     #     "You are an AI trained to analyze data and respond to user queries based strictly on the provided data. You should not use any external knowledge.\n\n"
