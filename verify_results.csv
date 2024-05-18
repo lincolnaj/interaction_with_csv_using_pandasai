@@ -1,0 +1,68 @@
+Source,Count,Actor,Count,Tactic ID,Count,Tactic Name,Count,Technique ID,Count,Technique,Count,Sub-technique ID,Count,Sub-Technique Name,Count
+CISA,75.0,Akira,21.0,TA0001,17.0,Initial Access,17.0,T1078,15.0,Valid Accounts,15.0,T1566.001,4,Spearphishing Link,3.0
+ACSC,45.0,APT29,15.0,TA0005,15.0,Defense Evasion,15.0,T1566,7.0,Phishing,7.0,T1059.001,3,Spearphishing Attachment,3.0
+,,Rhysida,15.0,TA0043,14.0,Reconnaissance,14.0,T1059,5.0,Command and Scripting Interpreter,5.0,T1562.001,2,PowerShell,3.0
+,,G1017,13.0,TA0042,12.0,Resource Development,12.0,T1070,4.0,Indicator Removal,4.0,T1593.001,2,Social Media Accounts,2.0
+,,Phobos ,13.0,TA0006,11.0,Credential Access,11.0,T1589,4.0,Gather Victim Identity Information,4.0,T1070.004,2,Domain Account,2.0
+,,Star Blizzard,11.0,TA0003,9.0,Persistence,9.0,T1110,3.0,Acquire Infrastructure,3.0,T1587.001,2,File Deletion,2.0
+,,BianLian,11.0,TA0002,8.0,Execution,8.0,T1587,3.0,OS Credential Dumping,3.0,T1021.001,2,Malware,2.0
+,,ALPHV Blackcat,5.0,TA0007,8.0,Discovery,8.0,T1021,3.0,External Remote Services,3.0,T1589.002,2,Remote Desktop Protocol,2.0
+,,G1015,4.0,TA0011,6.0,Command and Control,6.0,T1016,3.0,Remote Services,3.0,T1016.001,2,Disable or Modify Tools,2.0
+,,G0098,4.0,TA0004,5.0,Privilege Escalation,5.0,T1133,3.0,System Network Configuration Discovery,3.0,T1583.001,2,Internet Connection Discovery,2.0
+,,APT28,3.0,TA0010,5.0,Exfiltration,5.0,T1583,3.0,Develop Capabilities,3.0,T1098.005,2,Email Addresses,2.0
+,,Playcrypt,3.0,TA0040,4.0,Impact,4.0,T1593,3.0,Brute Force,3.0,T1566.002,2,Social Media,2.0
+,,G1027,1.0,TA0009,3.0,Collection,3.0,T1003,3.0,Account Manipulation,3.0,T1560.001,1,Email Accounts,2.0
+,,Karakurt,1.0,TA0008,3.0,Lateral Movement,3.0,T1098,3.0,Search Open Websites/Domains,3.0,T1588.003,1,Domains,2.0
+,,,,,,,,T1585,2.0,Establish Accounts,2.0,T1071.002,1,Device Registration,2.0
+,,,,,,,,T1219,2.0,Hide Artifacts,2.0,T1591.002,1,File Transfer Protocols,1.0
+,,,,,,,,T1136,2.0,Remote Access Software,2.0,T1578.002,1,Business Relationships,1.0
+,,,,,,,,T1486,2.0,Impair Defenses,2.0,T1136.001,1,Code Signing Certificates,1.0
+,,,,,,,,T1598,2.0,User Execution,2.0,T1136.002,1,Local Account,1.0
+,,,,,,,,T1562,2.0,Data Encrypted for Impact,2.0,T1003.001,1,Create Cloud Instance,1.0
+,,,,,,,,T1204,2.0,Email Collection,2.0,T1110.003,1,Password Spraying,1.0
+,,,,,,,,T1069,2.0,Phishing for Information,2.0,T1204.002,1,Archive via Utility,1.0
+,,,,,,,,T1586,2.0,Create Account,2.0,T1595.001,1,LSASS Memory,1.0
+,,,,,,,,T1114,2.0,Gather Victim Org Information,2.0,T1110.001,1,Password Guessing,1.0
+,,,,,,,,T1591,2.0,Gather Victim Network Information,2.0,T1598.003,1,Scanning IP Blocks,1.0
+,,,,,,,,T1048,2.0,Permission Groups Discovery,2.0,T1586.001,1,Malicious File,1.0
+,,,,,,,,T1190,2.0,Exfiltration Over Alternative Protocol,2.0,T1555.001,1,Keychain,1.0
+,,,,,,,,T1590,2.0,Compromise Accounts,1.0,T1558.001,1,Golden Ticket,1.0
+,,,,,,,,T1564,2.0,Archive Collected Data,1.0,T1557.002,1,ARP Cache Poisoning,1.0
+,,,,,,,,T1055,1.0,Remote System Discovery,1.0,T1059.003,1,Windows Command Shell,1.0
+,,,,,,,,T1557,1.0,Domain Trust Discovery,1.0,T1055.002,1,Portable Executable Injection,1.0
+,,,,,,,,T1558,1.0,Process Injection,1.0,T1070.001,1,Clear Windows Event Logs,1.0
+,,,,,,,,T1555,1.0,Transfer Data to Cloud Account,1.0,T1564.003,1,Hidden Window,1.0
+,,,,,,,,T1595,1.0,Active Scanning,1.0,T1003.003,1,NTDS,1.0
+,,,,,,,,T1018,1.0,Financial Theft,1.0,T1069.001,1,Local Groups,1.0
+,,,,,,,,T1490,1.0,Adversary-in-the-Middle,1.0,T1069.002,1,Domain Groups,1.0
+,,,,,,,,T1621,1.0,Steal or Forge Kerberos Tickets,1.0,T1087.002,1,Malicious Link,1.0
+,,,,,,,,T1657,1.0,Inhibit System Recovery,1.0,T1204.001,1,Remote Email Collection,1.0
+,,,,,,,,T1537,1.0,Multi-Factor Authentication Request Generation,1.0,T1114.002,1,Web Session Cookie,1.0
+,,,,,,,,T1560,1.0,Credentials from Password Stores,1.0,T1550.004,1,Spear-phishing Attachment,1.0
+,,,,,,,,T1482,1.0,Compromise Infrastructure,1.0,T1114.003,1,External Proxy,1.0
+,,,,,,,,T1090,1.0,Proxy,1.0,T1090.002,1,Cloud Accounts,1.0
+,,,,,,,,T1020,1.0,Exploit Public-Facing Application,1.0,T1078.004,1,Default Accounts,1.0
+,,,,,,,,T1567,1.0,Automated Exfiltration,1.0,T1078.001,1,Domain Properties,1.0
+,,,,,,,,T1584,1.0,Obfuscated Files or Information,1.0,T1590.001,1,Determine Physical Locations,1.0
+,,,,,,,,T1105,1.0,Exploit Public-facing Application,1.0,T1591.001,1,Credentials,1.0
+,,,,,,,,T1027,1.0,Exploitation for Client Execution,1.0,T1589.001,1,Network Security Appliances,1.0
+,,,,,,,,T1071,1.0,Server Software Component,1.0,T1590.006,1,Botnet,1.0
+,,,,,,,,T1203,1.0,Masquerading,1.0,T1583.005,1,Server,1.0
+,,,,,,,,T1588,1.0,Dynamic Resolution,1.0,T1584.004,1,Exploits,1.0
+,,,,,,,,T1578,1.0,Exfiltration Over Web Service,1.0,T1587.004,1,Unix Shell,1.0
+,,,,,,,,T1505,1.0,Ingress Tool Transfer,1.0,T1059.004,1,Clear Persistence,1.0
+,,,,,,,,T1550,1.0,Compromise Accounts:,1.0,T1070.009,1,Software Packing,1.0
+,,,,,,,,T1036,1.0,Steal Application Access Token,1.0,T1027.002,1,Domain Accounts,1.0
+,,,,,,,,T1528,1.0,Use Alternate Authentication Material,1.0,T1078.002,1,Exfiltration Over Symmetric Encrypted Non-C2 Protocol,1.0
+,,,,,,,,T1568,1.0,Modify Cloud Compute Infrastructure,1.0,T1048.001,1,SQL Stored Procedures,1.0
+,,,,,,,,T1087,1.0,Obtain Capabilities,1.0,T1505.001,1,Invalid Code Signature,1.0
+,,,,,,,,,,Application Layer Protocol,1.0,T1036.001,1,Hidden Files and Directories,1.0
+,,,,,,,,,,Account Discovery,1.0,T1564.001,1,Fast Flux DNS,1.0
+,,,,,,,,,,,,T1568.001,1,Traffic Duplication,1.0
+,,,,,,,,,,,,T1020.001,1,Exfiltration to Code Repository,1.0
+,,,,,,,,,,,,T1567.001,1,Employee Names,1.0
+,,,,,,,,,,,,T1589.003,1,Email Forwarding Rule,1.0
+,,,,,,,,,,,,T1585.001,1,SSH,1.0
+,,,,,,,,,,,,T1585.002,1,,
+,,,,,,,,,,,,T1586.002,1,,
+,,,,,,,,,,,,T1021.004,1,,
