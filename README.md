@@ -34,8 +34,7 @@ An LLM powered ChatCSV Streamlit app so you can chat with your CSV files.
   git clone https://github.com/AIAnytime/ChatCSV-Streamlit-App.git
   cd ChatCSV-Streamlit-App
   pip install -r requirements.txt
-  streamlit run test.py
-    streamlit run test_with_prompt.py
+  streamlit run main.py
 
   
   ```
